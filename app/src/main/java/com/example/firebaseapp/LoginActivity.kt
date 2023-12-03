@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Selamat datang $email", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, MapsActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                 } else {
                     Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
